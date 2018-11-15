@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox Playground</title>
+    <link rel="stylesheet" href="style-survey.css">
+    <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
+</head>
+
+<main>
+    <header>
+        <h1 id="title">
+            Philosophy
+        </h1>
+        <p id="description"> Tell us about you</p>
+        
+    </header>
+
+</main>
+<form id="survey-form">
+    <section id="container">
+
+        <!--NAME -->
+        <div class="description"><label id="name-label" class="box">*Name:</label></div>
+        <div class="input"><input type="text" placeholder="Name" id="name" required></div>
+        <!-- </div> -->
+
+        <!-- EMAIL -->
+        <div class="description"> <label id="email-label" class="box">*Email:</label></div>
+        <div class="input"><input type="email" placeholder="Enter your email" id="email" required></div>
+
+        <!-- AGE-->
+        <div class="description"><label id="number-label" class="box">*Age:</label></div>
+        <div class="input"><input type="number" placeholder="Enter your age" id="number" min="1" max="125" required> </div>
+
+        <!-- FAVOURITE PHILOSOPHER -->
+        <div class="description"><label> Your favourite philosopher</label></div>
+        <div class="input">
+            <select id="dropdown">
+                <option value="select">Select an option</option>
+                <option value="Plato">Plato</option>
+                <option value="Nietzche">Nietzche</option>
+                <option value="Blackmore">Susan Blackmore</option>
+                <option value="Otzuka">Otzuka</option>
+            </select>
+        </div>
+
+        <!-- FAVOURITE PHILOSOPHY -->
+        <div class="description"><label id="radio-description">What's your favourite field of philosophy?</label></div>
+        <div class="input">
+            <ul style="list-style: none" id="list">
+                <li class="radio"><label> <input type="radio" name="radio-buttons" value="1"> Metaphysics </label></li>
+                <li class="radio"><label> <input type="radio" name="radio-buttons" value="2">Epistemology</label></li>
+                <li class="radio"><label> <input type="radio" name="radio-buttons" value="3">Moral philosophy</label></li>
+            </ul>
+        </div>
+        <!-- LEARNING PHILOSOPY -->
+        <div class="description"> <label id="tick-description">What sources do you use to learn philosophy?</label></div>
+        <div class="input">
+            <ul id="boxes" style="list-style: none;">
+                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="learning">Books</label></li>
+                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="learning">Internet</li>
+                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="learning">Videos</label></li>
+                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="learning">University</label></li>
+                <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="learning">Self-introspection</label></li>
+                <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="learning">Online
+                        courses</label></li>
+            </ul>
+        </div>
+
+
+        <!-- COMMENTS -->
+        <div class="description"> <label> Any favourite quote?</label> </div>
+        <div class="input"> <textarea id="comments" placeholder="Write here your quote" style="height:70px;resize:vertical"></textarea></div>
+ 
+    </section>
+
+        <button id="submit" type="submit"> Submit </button>
+
+   
+
+</form>
